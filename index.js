@@ -74,14 +74,16 @@ function appendData(data){
         // let img = document.createElement('img');
         let p = document.createElement('p');
         let p2 = document.createElement('p');
+        let p3 = document.createElement('p');
         // let random = (Math.floor(Math.random()*100) +100) /10;
              
         // img.src= el.image;
         // ratt.textContent=`${el.rating.rate} ⭐ | ${random} K`
         p.textContent=`Name:- ${el.name}`;
-        p2.textContent=`Price:${el.username}`;
+        p2.textContent=`username:${el.username}`;
+        p3.textContent=`username:${el.email}`;
     
-        card.append(p,p2);
+        card.append(p,p2,p3);
         document.querySelector("#container").append(card);
     })
 }
