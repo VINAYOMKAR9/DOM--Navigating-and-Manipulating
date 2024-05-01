@@ -80,10 +80,30 @@ function appendData(data){
         // img.src= el.image;
         // ratt.textContent=`${el.rating.rate} ⭐ | ${random} K`
         p.textContent=`Name:- ${el.name}`;
-        p2.textContent=`username:${el.username}`;
-        p3.textContent=`username:${el.email}`;
+        p2.textContent=`username: ${el.username}`;
+        p3.textContent=`email: ${el.email}`;
     
         card.append(p,p2,p3);
         document.querySelector("#container").append(card);
     })
 }
+
+let btn = document.querySelector("#btn");
+
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  let nameValue = document.querySelector("#name").value;
+  let usernameValue = document.querySelector("#username").value;
+  let emailValue = document.querySelector("#email").value;
+
+  console.log(nameValue, usernameValue, emailValue);
+  let obj = { name: nameValue, username: usernameValue, email: emailValue };
+  user.push(obj);
+  nameValue = "";
+  usernameValue="";
+  emailValue = "";
+  appendData(user);
+
+
+});

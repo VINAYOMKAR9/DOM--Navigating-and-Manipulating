@@ -21,7 +21,46 @@ img{
     height: 150px;
     margin-left: 32%;
 }
-
+#addUser{
+    margin: auto ;
+    /* border: 1px solid rgb(254, 9, 9); */
+    text-align: center;
+    font-weight:bolder;
+    color: brown;
+    margin-top: 60px;
+    
+}
+#formm{
+    width: 80%;
+    height: 55px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 40px;
+}
+#email{
+    border-radius: 5px;
+    height: 35px;
+    width: 300px;
+}
+#name{
+    border-radius: 5px;
+    height: 35px;
+    width: 300px;
+}
+#username{
+    border-radius: 5px;
+    height: 35px;
+    width: 300px;
+}
+#btn{
+    width: 150px;
+    height: 55px;
+    border-radius: 50%;
+    color:white;
+    background-color: cadetblue;
+}
 @media all and (min-width:901px) and (max-width:1500px){
     #container{
         width: 90%;
